@@ -1,10 +1,12 @@
 // USER VARIABLES SECTION
 
 $accent: orange; // Accent Color
-$fontsize: 16px; // Body Font Size
-$textcolor: #333; // Text Color
+$fontsize: 18px; // Body Font Size
+$textcolor: #fff; // Text Color
 $system: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
-$roboto: Roboto, sans-serif; // Roboto Font Family
+$roboto: 'Roboto Condensed', sans-serif; // Roboto Font Family
+$fweight: 400;
+
 
 // Bootstrap compatible gutter variable => $gutter
 $grid-gutter-width: 20px;
@@ -29,10 +31,8 @@ $gutter: $grid-gutter-width;
 	}
 }
 
-@include font('Roboto', normal, 400, '../fonts/roboto-regular-webfont.woff2');
-@include font('Roboto', italic, 400, '../fonts/roboto-italic-webfont.woff2');
-@include font('Roboto', normal, 700, '../fonts/roboto-bold-webfont.woff2');
-@include font('Roboto', italic, 700, '../fonts/roboto-bolditalic-webfont.woff2');
+@include font('Roboto', normal, 400, '../fonts/RobotoCondensed-Regular.woff2');
+@include font('Roboto', italic, 300, '../fonts/RobotoCondensed-LightItalic.woff2');
 
 // GENERAL DOCUMENT STYLES
 
@@ -51,8 +51,43 @@ input, textarea {
 	&:required:valid { border-color: green }
 }
 
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+*,*::before, *::after {
+	box-sizing: inherit;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	&:hover {
+		color: inherit;
+		text-decoration: none;
+	}
+}
+
+ul,
+li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	font-size: inherit;
+}
+
 body {
 	font-family: $roboto;
+	font-weight: $fweight;
 	font-size: $fontsize;
 	min-width: 320px;
 	position: relative;
