@@ -1,0 +1,35 @@
+.video {
+	background-image: url('../images/dest/video-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	background-position: center center;
+	text-align: right;
+	&__text {
+		font-style: italic;
+		font-weight: 300;
+		font-size: 72px;
+		line-height: 84px;
+		color: #85CCDC;
+		padding-top: 275px;
+		margin-bottom: 40px;
+		span {
+			display: block;
+			padding-right: 150px;
+		}
+	}
+	&__btn {
+		padding-left: 112px;
+		position: relative;
+		margin-right: 125px;
+		&::before {
+			content: "";
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			top: -40px;
+			left: 0;
+			background-image: url('../images/dest/youtube.svg');
+		}
+	}
+}
