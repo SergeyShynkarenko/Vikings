@@ -1,0 +1,22 @@
+.about {
+	&__inner {
+		display: flex;
+	}
+	&__info {
+		width: 375px;
+		margin-right: 50px;
+		flex: none;
+		&-item {
+			margin-bottom: 25px;
+			color: #E5E5E5;
+			span {
+				display: block;
+			}
+		}
+	}
+	&__text {
+		p {
+			margin-bottom: 25px;
+		}
+	}
+}
