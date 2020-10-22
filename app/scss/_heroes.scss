@@ -1,0 +1,47 @@
+.heroes {
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__slider-img {
+		width: 775px;
+	}
+	&__slider-text {
+		max-width: 350px;
+	}
+	&__tex {
+		p {
+			margin-bottom: 15px;
+		}
+	}
+	&__name {
+		font-style: italic;
+		font-weight: 300;
+		font-size: 72px;
+		line-height: 84px;
+		color: #85CCDC;
+		margin-bottom: 44px;
+	}
+}
+.slick {
+	&-btn {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		border: none;
+		background-color: transparent;
+		z-index: 5;
+		cursor: pointer;
+		outline: none;
+	}
+	&-prev {
+		left: 38px;
+	}
+	&-next {
+		right: 38px;
+	}
+}
+.copy {
+	padding: 14px 0 15px;
+	text-align: center;
+}
