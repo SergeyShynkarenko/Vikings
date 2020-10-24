@@ -1,13 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-	$('[data-fancybox]').fancybox({
-    youtube : {
-        controls : 0,
-        showinfo : 0
-    }
-	});
-
-	 $('.heroes__slider-img').slick({
+	$('.heroes__slider-img').slick({
 	  slidesToShow: 1,
 	  slidesToScroll: 1,
 	  asNavFor: '.heroes__slider-text',

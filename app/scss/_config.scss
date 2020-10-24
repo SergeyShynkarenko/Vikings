@@ -28,6 +28,7 @@ $gutter: $grid-gutter-width;
 		font-family: $fname;
 		font-style: $fstyle;
 		font-weight: $fweight;
+		// line-height: $lheight;
 		// font-display: swap; // Uncomment to initially display system fonts
 		src: local($fname), url($furl) format('woff2');
 	}
