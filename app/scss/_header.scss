@@ -20,23 +20,27 @@
 .menu {
 	padding: 50px 0 58px;
 	background: linear-gradient(180deg, #111213 0%, #111213 43.62%, rgba(32, 31, 33, 0) 86.33%);
-}
-.menu__list {
-	display: flex;
-	justify-content: center;
-	&-item {
-		padding: 0 13px;
+	&__btn {
+		display: none;
 	}
-	&-link {
-		font-size: 36px;
-		line-height: 42px;
-		&:hover,
-		&--active {
-			color: #85CCDC;
-			text-decoration: underline;
+	&__list {
+		display: flex;
+		justify-content: center;
+		&-item {
+			padding: 0 13px;
+		}
+		&-link {
+			font-size: 36px;
+			line-height: 42px;
+			&:hover,
+			&--active {
+				color: #85CCDC;
+				text-decoration: underline;
+			}
 		}
 	}
 }
+
 .logo {
-	padding-top: 95px;
+	padding-top: 17vh;
 }
